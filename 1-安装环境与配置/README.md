@@ -1,4 +1,4 @@
-## dosbox安装教程for Linux
+## dosbox安装教程
 
 1. 安装dosbox
 
@@ -8,11 +8,11 @@
     ```
 - windows
 
-    使用安装包`DOSBox0.74-win32-installer.exe`安装即可
+    使用安装包[`DOSBox0.74-win32-installer.exe`](https://github.com/Wistral/simple-masm/blob/master/1-%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E4%B8%8E%E9%85%8D%E7%BD%AE/install/DOSBox0.74-win32-installer.exe)安装即可
 
 - Android
   
-    使用`DosBox.apk`安装
+    使用[`DosBox.apk`](https://github.com/Wistral/simple-masm/blob/master/1-%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E4%B8%8E%E9%85%8D%E7%BD%AE/install/DosBox.apk)安装
 
 2. 配置dosbox
 
@@ -27,12 +27,12 @@
 
     `$sdcard0/dosbox.conf`
     
-    手机上修改不了可以先把后缀.conf改成.txt, 修改完再该回去
+    手机上修改不了可以先把后缀.conf改成.txt, 修改完再改回去
 
 修改其中几项(安卓可以跳过这步, 因为默认是直接挂载内部存储的根目录到c盘)
 
-    - 修改`windowresolution=1024x768`调整分辨率（某些高分辨率显示下需要）
-    - 设置`[autoexec]`以自动挂载
+  - 修改`windowresolution=1024x768`调整分辨率（某些高分辨率显示下需要）
+  - 设置`[autoexec]`以自动挂载
 
     这里运行dos程序需要将程序先挂载到dosbox里，假设`/home/wistral/.dosbox/c`是我们要挂载的本地目录(其他平台类似)
 
@@ -58,7 +58,7 @@
 
 4. 测试编译运行
 
-    这里准备了一个`hello.asm`的masm文件以测试
+    这里准备了一个[`hello.asm`](https://github.com/Wistral/simple-masm/blob/master/1-%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E4%B8%8E%E9%85%8D%E7%BD%AE/hello.asm)的masm文件以测试, 至于内容后面会详细讲解
     
     运行以下命令(中间要求输入的直接3次回车默认值就行)
     ```bat
@@ -67,11 +67,11 @@
     hello.exe       ;运行
     ```
 
-    如果出现`hello world!`的输出则安装正常
+    如果出现`Hello World!`的输出则安装正常
 
 5. 编写编译批处理脚本
 
-    将上述命令写成bat文件(假设叫`ale.bat`)
+    将上述命令写成bat文件(假设叫[`ale.bat`](https://github.com/Wistral/simple-masm/blob/master/1-%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E4%B8%8E%E9%85%8D%E7%BD%AE/install/ex/ale.bat))
     ```bat
     echo assemble file %1.asm
     del %1.obj
