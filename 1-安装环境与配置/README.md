@@ -1,5 +1,7 @@
 ## dosbox安装教程
 
+## [下载地址](https://github.com/Wistral/simple-masm/releases/download/1.0/install.zip)
+
 1. 安装dosbox
 
 - ubuntu
@@ -8,13 +10,13 @@
     ```
 - windows
 
-    使用安装包[`DOSBox0.74-win32-installer.exe`](https://github.com/Wistral/simple-masm/blob/master/1-%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E4%B8%8E%E9%85%8D%E7%BD%AE/install/DOSBox0.74-win32-installer.exe)安装即可
+    使用安装包`DOSBox0.74-win32-installer.exe`安装即可
 
 - Android
   
-    使用[`DosBox.apk`](https://github.com/Wistral/simple-masm/blob/master/1-%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E4%B8%8E%E9%85%8D%E7%BD%AE/install/DosBox.apk)安装
+    使用`DosBox.apk`安装
 
-2. 配置dosbox
+1. 配置dosbox
 
 打开配置文件, 文件路径如下
 - Ubuntu
