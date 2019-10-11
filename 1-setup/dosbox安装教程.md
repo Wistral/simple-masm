@@ -52,7 +52,7 @@
 
     可以把这些目录添加到dos的环境变量里(同样可以加到`[autoexec]`)
     ```bat
-    path %path% c:\masm c:\ex
+    path %path%;c:\masm;c:\ex
     ```
     这样就可以在任意路径使用这些目录下的程序或脚本
 
@@ -71,14 +71,16 @@
 
 5. 编写编译批处理脚本
 
-    将上述命令写成bat文件(假设叫`cmp.bat`)
+    将上述命令写成bat文件(假设叫`ale.bat`)
     ```bat
     echo assemble file %1.asm
-    masm %1
-    link %1
+    del %1.obj
+    del %1.exe
+    masm %1 
+    link %1 
     %1.exe
     ```
-    现在汇编, 链接, 运行只需要一句`cmp hello`就可以了
+    现在汇编, 链接, 运行只需要一句`ale hello`就可以了
 
 参考
 ---
