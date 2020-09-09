@@ -84,6 +84,16 @@
     ```
     现在汇编, 链接, 运行只需要一句`ale hello`就可以了
 
+6. 其他安装问题
+
+    - dosbox按键映射不正确
+
+        例如按`\`键显示`]`，可以在dosbox中`Ctrl+F1`进入按键映射设置页面
+
+        找到要修改的键，点击，之后点击下面的`Del`删除原来的映射
+
+        再点击`Add`，按下新的映射键，完成设置
+
 参考
 ---
 - [在Linux里使用dosbox运行debug.exe](https://blog.csdn.net/Kwansy/article/details/82939391)
